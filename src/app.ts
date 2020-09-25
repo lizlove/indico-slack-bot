@@ -1,5 +1,5 @@
-const { App } = require('@slack/bolt');
-require('dotenv').config();
+const { App } = require("@slack/bolt");
+require("dotenv").config();
 
 // Initialize app
 const app = new App({
@@ -7,7 +7,7 @@ const app = new App({
   signingSecret: process.env.SLACK_SIGNING_SECRET
 });
 
-app.message('hello', async ({ message, say }) => {
+app.message("hello", async ({ message, say }) => {
   await say(`Hey there <@${message.user}>!`)
 });
 
@@ -16,5 +16,5 @@ app.message('hello', async ({ message, say }) => {
   // Start the app
   await app.start(process.env.PORT || 3000);
 
-  console.log('🤖  Indico Bot is running!');
+  console.log("🤖 Indico Bot is running!");
 })();

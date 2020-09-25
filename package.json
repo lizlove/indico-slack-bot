@@ -16,20 +16,24 @@
     "start": "tsc && node dist/app.js",
     "dev": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/app.ts"
   },
-  "contributors": [{
-    "name": "Elizabeth Lovero",
-    "url": "https://github.com/lizlove"
-  }],
+  "contributors": [
+    {
+      "name": "Elizabeth Lovero",
+      "url": "https://github.com/lizlove"
+    }
+  ],
   "dependencies": {
     "@slack/bolt": "^2.3.0",
+    "@slack/types": "^1.9.0",
     "dotenv": "^8.2.0"
   },
   "devDependencies": {
     "@types/node": "^13.11.1",
     "@typescript-eslint/eslint-plugin": "^4.2.0",
     "@typescript-eslint/parser": "^4.2.0",
-    "eslint": "^7.9.0",
-    "gts": "^2.0.2",
+    "eslint": "^7.2.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-plugin-import": "^2.22.0",
     "nodemon": "^2.0.4",
     "ts-node": "^7.0.1",
     "typescript": "^3.8.3"
